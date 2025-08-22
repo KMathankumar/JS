@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arithmetic Operations</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>
+<div class="container">
+<h1>Arithmetic Operations</h1>
+<div class=button>
+<button onclick="add()">ADDITION</button>
+<button onclick="subtract()">SUBTRACTION</button>
+</div><div class=button>
+<button onclick="multiply()">MULTIPLICATION</button>
+<button onclick="divide()">DIVISION</button>
+</div></div>
+</center>
+<script>
+
+function add() {
+
+let a=parseFloat(prompt("Enter a value:"));
+let b=parseFloat(prompt("Enter b value:"));
+let result=a+b;
+alert("Addition:"+result);
+}
+
+function subtract() {
+let a=parseFloat(prompt("Enter a value:"));
+let b=parseFloat(prompt("Enter b value:"));
+let result=a-b;
+alert("Subtraction:"+result);
+}
+
+function multiply() {
+let a=parseFloat(prompt("Enter a value:"));
+let b=parseFloat(prompt("Enter b value:"));
+let result=a*b;
+alert("Multiplication:"+result);
+}
+
+function divide() {
+let a=parseFloat(prompt("Enter a value:"));
+let b=parseFloat(prompt("Enter b value:"));
+let result=a/b;
+alert("Division:"+result);
+} 
+
+</script>
+</body>
+</html>
+  
+

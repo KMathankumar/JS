@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+body {
+background-color:lightgrey;
+
+}
+
+div {
+background-color:white;
+padding:20px;
+border-radius:10px;
+width:350px;
+margin-top:150px;
+}
+
+h2 {
+text-align:center;
+}
+
+td {
+padding:8px;
+padding-left:5px;
+}
+
+input, textarea {
+padding:10px;
+padding-left:10px;
+margin-left:10px;
+width:200px;
+border:1px;
+border-style:solid;
+border-color:grey;
+border-radius:5px;
+}
+
+button {
+background-color:black;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px;
+font-size:16px;
+}
+
+.btn-cancel{
+background-color:red;
+}
+
+</style>
+</head>
+<body><center>
+<div >
+<h2>Registration Form</h2>
+<form >
+<table>
+<tr><td>Name</td><td><input type="text" required></td></tr>
+<tr><td>Phone</td><td><input type="tel" maxlength="10" required></td></tr>
+<tr><td>Address</td><td><textarea rows="3" required></textarea></td></tr>
+<tr><td>Mail ID</td><td><input type="email" required></td></tr>
+<tr><td><button type="submit" onclick="show()">Register</button></td><td><button type="button" class="btn-cancel" >Cancel</button></td></tr>
+</table>
+</form>
+</div>
+</center>
+
+<script>
+function show() {
+alert("Your form submitted");
+}
+</script>
+</body>
+</html>

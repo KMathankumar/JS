@@ -1,0 +1,39 @@
+body {
+background-color:lightgrey;
+margin-top: 100px;
+
+}
+
+h1 {
+color:teal;
+margin-bottom:30px;
+}
+
+.container {
+background-color:white;
+padding:40px;
+margin:150px;
+width:350px;
+border-radius:10px;
+}
+
+h1 {
+text-align:center;
+}
+
+button {
+flex:1;
+background-color:black;
+color:white;
+border:none;
+padding:15px;
+border-radius:5px;
+font-size:16px;
+}
+
+.button{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+

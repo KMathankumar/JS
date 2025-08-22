@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body id="body">
+<center>
+<div id="formbox">
+<h2 id="formheading">Registration Form</h2>
+<form>
+<table>
+<tr><td>Name</td><td><input type="text" id="name" required></td></tr>
+<tr><td>Phone</td><td><input type="tel" id="phone" maxlength="10" required></td></tr>
+<tr><td>Address</td><td><textarea rows="3" id="address" required></textarea></td></tr>
+<tr><td>Mail ID</td><td><input type="email" id="email" required></td></tr>
+<tr><td><button type="submit" id="submit" onclick="show()">Submit</button></td><td><button type="button" id="cancel" onclick="cancel()">Cancel</button></td></tr>
+</table>
+</form>
+</div>
+</center>
+<script>
+
+document.getElementById("body").style.backgroundColor="lightgrey";
+
+var formbox=document.getElementById("formbox");
+formbox.style.backgroundColor="white";
+formbox.style.padding="20px";
+formbox.style.borderRadius="10px";
+formbox.style.width="350px";
+formbox.style.marginTop="150px";
+
+var nam=document.getElementById("name");
+nam.style.padding="10px";
+nam.style.width="200px";
+nam.style.borderWidth="1px"; 
+nam.style.borderStyle="solid"; 
+nam.style.borderColor="grey";
+nam.style.borderRadius="5px";
+
+var phone=document.getElementById("phone");
+phone.style.padding="10px";
+phone.style.width="200px";
+phone.style.borderWidth="1px"; 
+phone.style.borderStyle="solid"; 
+phone.style.borderColor="grey";
+phone.style.borderRadius="5px";
+
+var address=document.getElementById("address");
+address.style.padding="10px";
+address.style.width="200px";
+address.style.borderWidth="1px"; 
+address.style.borderStyle="solid"; 
+address.style.borderColor="grey";
+address.style.borderRadius="5px";
+
+var email=document.getElementById("email");
+email.style.padding="10px";
+email.style.width="200px";
+email.style.borderWidth="1px"; 
+email.style.borderStyle="solid"; 
+email.style.borderColor="grey";
+email.style.borderRadius="5px";
+
+var submit=document.getElementById("submit");
+submit.style.backgroundColor="green";
+submit.style.color="white";
+submit.style.border="none";
+submit.style.padding="10px";
+submit.style.borderRadius="5px";
+submit.style.fontSize="16px";
+
+var cancel=document.getElementById("cancel");
+cancel.style.backgroundColor="red";
+cancel.style.color="white";
+cancel.style.border="none";
+cancel.style.padding="10px";
+cancel.style.borderRadius="5px";
+cancel.style.fontSize="16px";
+
+function show(){
+alert("Your form submitted");
+}
+
+function cancel(){
+alert("Your form cancelled");
+}
+</script>
+
+</body>
+</html>

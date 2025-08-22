@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Months </title>
+</head>
+<body>
+<script>
+
+function month1() {
+return "January";
+}
+
+function month2() {
+return "February";
+}
+
+function month3() {
+return "March";
+}
+
+function month4() {
+return "April";
+}
+
+function month5() {
+return "May";
+}
+
+function month6() {
+return "June";
+}
+
+function month7() {
+return "July";
+}
+
+function month8() {
+return "August";
+}
+
+function month9() {
+return "September";
+}
+
+function month10() {
+return "October";
+}
+
+function month11() {
+return "November";
+}
+
+function month12() {
+return "December";
+}
+
+var date=parseInt(prompt("Enter the date (1-31):"));
+let monthnum=parseInt(prompt("Enter month number (1-12):"));
+let monthname;
+
+switch(monthnum){
+case 1:
+monthname=month1();
+break;
+case 2:
+monthname=month2();
+break;
+case 3:
+monthname=month3();
+break;
+case 4:
+monthname=month4();
+break;
+case 5:
+monthname=month5();
+break;
+case 6:
+monthname=month6();
+break;
+case 7:
+monthname=month7();
+break;
+case 8:
+monthname=month8();
+break;
+case 9:
+monthname=month9();
+break;
+case 10:
+monthname=month10();
+break;
+case 11:
+monthname=month11();
+break;
+case 12:
+monthname=month12();
+break;
+default:
+monthname="Invalid month number";
+}
+
+alert("Date:"+ date +"Month Name:"+monthname);
+document.write("Date:"+date+"<br>");
+document.write("Month Name:"+monthname);
+</script>
+
+</body>
+</html>

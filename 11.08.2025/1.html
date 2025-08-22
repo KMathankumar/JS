@@ -1,0 +1,68 @@
+<doctype html>
+<html>
+<head>
+<title>Switch case</title>
+</head>
+<body>
+
+
+<script>
+
+let a=parseFloat(prompt("num 1"));
+let b=parseFloat(prompt("num 2"));
+
+let choice=prompt("choice");
+
+function add(){
+sum=a+b;
+}
+
+function diff(){
+diff=a-b;
+}
+
+function mul(){
+mul=a*b;
+}
+
+function div(){
+div=a/b;
+}
+
+switch(choice)
+{
+case "add":
+add()
+document.write("Result:",sum);
+alert("Result:"+sum);
+break;
+
+case "diff":
+
+diff()
+document.write("Result:",diff);
+alert("Result:"+diff);
+break;
+
+
+case "mul":
+
+mul()
+document.write("Result:",mul);
+alert("Result:"+mul);
+break;
+
+
+case "div":
+
+div()
+document.write("Result:",div);
+alert("Result:"+div);
+break;
+
+
+default:
+alert("invalid choice");
+}
+
+</script>
