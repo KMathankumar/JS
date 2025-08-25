@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Location Object Example</title>
+</head>
+<body>
+<h2>Window Location Properties</h2>
+
+<p id="hash"></p>
+<p id="host"></p>
+<p id="hostname"></p>
+<p id="href"></p>
+<p id="origin"></p>
+<p id="pathname"></p>
+<p id="port"></p>
+<p id="protocol"></p>
+<p id="search"></p>
+
+<script>
+document.getElementById("hash").innerHTML="hash:"+window.location.hash;
+document.getElementById("host").innerHTML="host:"+window.location.host;
+document.getElementById("hostname").innerHTML="hostname:"+window.location.hostname;
+document.getElementById("href").innerHTML="href:"+window.location.href;
+document.getElementById("origin").innerHTML="origin:"+window.location.origin;
+document.getElementById("pathname").innerHTML="pathname:"+window.location.pathname;
+document.getElementById("port").innerHTML="port:"+window.location.port;
+document.getElementById("protocol").innerHTML="protocol:"+window.location.protocol;
+document.getElementById("search").innerHTML="search:"+window.location.search;
+</script>
+</body>
+</html>
