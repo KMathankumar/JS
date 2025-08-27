@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listener Examples</title>
+</head>
+<body>
+  <h2>Event Listener Examples</h2>
+
+  <!-- Button for mouse events -->
+  <button id="btn">Click Me</button>
+  <br><br>
+
+  <!-- Input for keyboard & form events -->
+  <input type="text" id="myInput" placeholder="Type something...">
+  <br><br>
+
+  <!-- Form for submit/reset -->
+  <form id="myForm">
+    <input type="text" placeholder="Enter Name">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <p id="output"></p>
+
+  <script>
+    let btn = document.getElementById("btn");
+    let input = document.getElementById("myInput");
+    let form = document.getElementById("myForm");
+    let output = document.getElementById("output");
+
+    // 🔹 Mouse Events
+    btn.addEventListener("click", () => output.innerText = "Mouse Event: click");
+    btn.addEventListener("dblclick", () => output.innerText = "Mouse Event: dblclick");
+    btn.addEventListener("mouseover", () => output.innerText = "Mouse Event: mouseover");
+    btn.addEventListener("mouseout", () => output.innerText = "Mouse Event: mouseout");
+    btn.addEventListener("mousemove", () => output.innerText = "Mouse Event: mousemove");
+    btn.addEventListener("mousedown", () => output.innerText = "Mouse Event: mousedown");
+    btn.addEventListener("mouseup", () => output.innerText = "Mouse Event: mouseup");
+    btn.addEventListener("contextmenu", (e) => {
+      e.preventDefault(); // prevent right-click menu
+      output.innerText = "Mouse Event: contextmenu (right click)";
+    });
+
+    // 🔹 Keyboard Events
+    input.addEventListener("keydown", (e) => output.innerText = "Keyboard Event: keydown (" + e.key + ")");
+    input.addEventListener("keyup", (e) => output.innerText = "Keyboard Event: keyup (" + e.key + ")");
+    input.addEventListener("keypress", (e) => output.innerText = "Keyboard Event: keypress (" + e.key + ")");
+
+    // 🔹 Form Events
+    input.addEventListener("focus", () => output.innerText = "Form Event: focus");
+    input.addEventListener("blur", () => output.innerText = "Form Event: blur");
+    input.addEventListener("change", () => output.innerText = "Form Event: change (after editing & leaving input)");
+    input.addEventListener("input", () => output.innerText = "Form Event: input (live typing)");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      output.innerText = "Form Event: submit";
+    });
+    form.addEventListener("reset", () => output.innerText = "Form Event: reset");
+
+    // 🔹 Window Events
+    window.addEventListener("load", () => console.log("Window Event: load (page fully loaded)"));
+    window.addEventListener("resize", () => output.innerText = "Window Event: resize");
+    window.addEventListener("scroll", () => output.innerText = "Window Event: scroll");
+    window.addEventListener("unload", () => console.log("Window Event: unload (leaving page)"));
+
+    // 🔹 Clipboard Events
+    input.addEventListener("copy", () => output.innerText = "Clipboard Event: copy");
+    input.addEventListener("cut", () => output.innerText = "Clipboard Event: cut");
+    input.addEventListener("paste", () => output.innerText = "Clipboard Event: paste");
+  </script>
+</body>
+</html>
+
+

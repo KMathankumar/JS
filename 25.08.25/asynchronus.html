@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="asyn"></p>
+<script>
+function disp(demons){
+document.getElementById("asyn").innerHTML=Asynchronous;
+}
+async function promise(){
+return "asynchron";
+}
+promise().then(
+function(value){ disp(value);},
+function(error){ disp(error);}
+);
+</script>
+</body>
+</html>

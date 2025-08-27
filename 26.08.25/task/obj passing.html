@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><title>object parameter passing</title></head>
+<body>
+<p id="result1">
+<p id="result2">
+<script>
+var result1=document.getElementById("result1");
+var result2=document.getElementById("result2");
+
+function showdata(dat)
+{
+result1.textContent="Name:"+dat.name;
+result2.textContent="Age:"+dat.age;
+}
+
+
+let data={name:"Mathan",age:"10"};
+
+showdata(data);
+
+</script></body>
+</html>

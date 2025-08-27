@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head><title>Array parameter passing</title></head>
+<body>
+<p id=result></p>
+<script>
+var result=document.getElementById("result")
+function showodd(num)
+{
+for(let i=0;i<=num.length;i++)
+result=num[i];
+document.write(result);
+}
+
+
+let odd=[1,3,5,7,9];
+showodd(odd);
+</script>
+
+</body>
+</html>

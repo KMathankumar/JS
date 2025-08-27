@@ -1,0 +1,18 @@
+<!Doctype html>
+<html>
+<head>
+<title>Eventlistener using Named Function</title>
+</head>
+<body>
+<button  id="btn">ChangeColor</button>
+<script>
+let btn=document.getElementById("btn");
+
+function color(){
+btn.style.backgroundColor="red";
+}
+
+btn.addEventListener("mouseover",color);
+</script>
+</body>
+</html>
