@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><title></title></head>
+<body>
+<button id="a">clink</button>
+<button onmouseover="changeColor()" id="b">Clisk</button>
+<script>
+let a=document.getElementById("a");
+let b=document.getElementById("b");
+
+a.addEventListener("click",function(){
+alert("onnumilla");
+});
+function changeColor() {
+b.style.color="green";
+}
+
+</script>
+</body>
+</html>

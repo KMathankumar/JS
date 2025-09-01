@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="asyn"></p>
+
+<script>
+function disp(message){
+    document.getElementById("asyn").innerHTML="Message";
+}
+
+async function getmessage() {
+return"Asynchronus worf";    
+}
+
+
+
+getmessage().then(
+function(value){
+    disp(value);
+},
+function(error){
+    disp(error);
+}
+
+)
+</script>
+</body>
+</html>

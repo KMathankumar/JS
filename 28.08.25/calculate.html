@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head><title>operator</title></head>
+<body>
+<button id="ad" onclick=add()>Add</button>
+<button id="su" onclick=sub()>Sub</button>
+<button id="mu" onclick=mul()>Mul</button>
+<button id="di" onclick=div()>Div</button>
+
+<p id="res"></p>
+<script>
+let a=parseFloat(prompt("Enter num1 value:"));
+let b=parseFloat(prompt("Enter num2 value:"));
+let result;
+let res=document.getElementById("res");
+
+
+let ad=document.getElementById("ad");
+let su=document.getElementById("su");
+let mu=document.getElementById("mu");
+let di=document.getElementById("di");
+
+function add(){
+result=a+b;
+res.textContent=result;
+alert(result);
+}
+
+function sub(){
+result=a-b;
+res.textContent=result;
+alert(result);
+
+}
+
+function mul(){
+result=a*b;
+res.textContent=result;
+alert(result);
+}
+
+function div(){
+result=a/b;
+res.textContent=result;
+alert(result);
+}
+
+</script>
+</body>
+</html>

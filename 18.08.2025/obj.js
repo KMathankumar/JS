@@ -1,8 +1,8 @@
 let object={name:"Mathan",age:21,city:"Theni"};
 console.log("Hello My name is"+object.name);
-document.write("<h1>Hello My name is"+object.name+"</h1>");
-document.write("<h2>Age is"+object.age+"</h2>");
-document.write("<h3>City is"+object.city+"</h3>");
+console.log("<h1>Hello My name is"+object.name+"</h1>");
+console.log("<h2>Age is"+object.age+"</h2>");
+console.log("<h3>City is"+object.city+"</h3>");
 
 let object1={name:"Mathan",Age:21,city:"THeni",address:
 {

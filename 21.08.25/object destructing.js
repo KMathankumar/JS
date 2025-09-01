@@ -1,11 +1,11 @@
 //object destructing 
 let person={name:"js", age:"30"};
-let {city="theni,"state="tn"}=person;
+let {city="theni", state="tn"}=person;
 console.log(city);
 console.log(state);
 
 //array destructing 
-let fruit=["apple,"grapes","orange","mango","strawberry"];
+let fruit=["apple","grapes","orange","mango","strawberry"];
 let [fruit1,fruit2]=fruit;
 let {[0]:fruit1,[1]:fruit2,[2]:fruit3}=fruit
 console.log(fruit1);

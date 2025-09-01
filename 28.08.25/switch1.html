@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head><title></title></head>
+<body>
+<button  onclick="cal('add')">Add</button>
+<button  onclick="cal('sub')">Sub</button>
+<button  onclick="cal('mul')">Mul</button>
+<button  onclick="cal('div')">Div</button>
+
+<p id=result></p>
+
+
+<script>
+let a=parseFloat(prompt("Enter num1:"));
+let b=parseFloat(prompt("Enter num2:"));
+let res;
+
+let result=document.getElementById("result");
+
+
+function cal(op)
+{
+switch(op){
+case "add":
+res=a+b;
+break;
+case "sub":
+res=a-b;
+break;
+case "mul":
+res=a*b;
+break;
+case "div":
+res=a/b;
+break;
+default:
+res="Invalid Choice";
+
+}
+result.textContent=res;
+}
+</script>
+</body>
+</html>

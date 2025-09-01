@@ -1,0 +1,122 @@
+
+
+1.Adding JS – Inline
+<script>
+  console.log("Hello JS!");
+</script>
+
+ Adding JS – External File
+<script src="app.js"></script>
+
+2.Comments
+
+Single-line Comments
+// This is a single-line comment
+
+Multi-line Comments
+/* This is
+   a multi-line comment */
+
+3.Output Methods
+
+console.log("Debug");-Developer tools
+document.write("HTML output");-Direct into HTML
+alert("Message");-Alert popup
+prompt("Enter name:");-Input box
+
+4.Local Storage – Set&Get
+
+localStorage.setItem("theme", "dark");
+console.log(localStorage.getItem("theme"));
+Local Storage – Remove
+localStorage.removeItem("theme");
+
+5.Location – URL,Hostname,Pathname
+console.log(location.href);
+console.log(location.hostname);
+console.log(location.pathname);
+
+6. Function Declaration
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(3, 4)); // 7
+
+
+7. IIFE (Immediately Invoked Function Expression)
+(function () {
+  console.log("Runs immediately!");
+})();
+
+8. DOM Selection – ID,Class,Tag
+
+document.getElementById("myId");
+document.getElementsByClassName("myClass");
+document.getElementsByTagName("p");
+
+9. Objects in JS
+const person = { first: "John", last: "Doe" };
+console.log(person.first, person["last"]);
+
+10. Arrays in JS
+let fruits = ["apple", "banana"];
+fruits.push("orange");
+console.log(fruits.length); // 3
+
+11. Destructuring Objects
+const user = { name: "Alice", age: 25 };
+const { name, age } = user;
+
+12. Array Destructuring & Swapping
+let [a, b] = [1, 2];
+[a, b] = [b, a]; // swap
+
+13. For Loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+14. While Loop
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+15. Do...While Loop
+let j = 0;
+do {
+  console.log(j);
+  j++;
+} while (j < 5);
+
+16. break Statement
+for (let i = 0; i < 10; i++) {
+  if (i === 5) break;
+  console.log(i);
+}
+
+17. continue Statement
+for (let i = 0; i < 5; i++) {
+  if (i === 2) continue;
+  console.log(i);
+}
+
+18. Switch Case
+let day = 2;
+switch (day) {
+  case 1: console.log("Monday"); break;
+  case 2: console.log("Tuesday"); break;
+  default: console.log("Other day");
+}
+
+19. Operators – Arithmetic,Comparison & Logical
+
+let x = 10, y = 5;
+console.log(x + y, x - y, x * y, x / y, x % y);
+console.log(5 == "5");   // true
+console.log(5 === "5");  // false
+console.log(10 > 5 && 5 < 8); // true
+
+20. Arrow Function
+const multiply = (x, y) => x * y;
