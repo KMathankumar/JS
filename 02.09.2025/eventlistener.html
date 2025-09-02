@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Swap</title>
+<style>
+img{
+width:300px;
+height:auto;
+cursor:pointer;
+transition:0.3s;
+}
+button{
+padding:20px;
+font-size:16px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<img id="img" src="image1.jpeg" alt="Image">
+<img src="image2.jpeg" id="img2" alt="Image">
+<br>
+<button id="btn">Change Image</button>
+<script>
+let img = document.getElementById("img");
+let btn=document.getElementById("btn");
+let img2=document.getElementById("img2");
+
+img.addEventListener("mouseover",()=>{
+try {
+img.src= "image2.jpeg";
+} 
+catch(err){
+console.log("Hover error:",err);
+}});
+
+img.addEventListener("mouseout",()=>{
+try {
+img.src="image1.jpeg";
+} 
+catch(err){
+console.log("Mouseout error:",err);
+}});
+
+btn.addEventListener("click",()=>{
+try {
+img2.src="image1.jpeg"
+} 
+catch(err){
+console.log("Button click error:",err);
+}});
+</script>
+</body>
+</html>
