@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+<title>Form Validation</title>
+</head>
+<body>
+<h1>registration</h1>
+<form onsubmit="return fieldEmpty()">
+<b>Name:</b><input type="text" id="name">
+<b>Email:</b><input type="text" id="email">
+<b>Password:</b><input type="password" id="password">
+<b>Confirm Password:</b><input type="password" id="password1">
+<input type="submit" value="submit">
+</form>
+
+<script>
+function fieldEmpty()
+{
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let pass=document.getElementById("password").value;
+let pass1=document.getElementById("password1").value;
+
+if(name=="")
+{
+alert("field is empty");
+return false;
+}
+if(!pattern.test(email))
+{
+alert("invalid mailid check it once");
+return false;
+}
+if(pass.length<8)
+{
+alert("password must be atleast 8 character");
+return false;
+}
+if(pass!=pass1)
+{
+alert("password not match,enter correctly");
+return false;
+}
+alert("form successfully submitted");
+return true;
+}
+</script>
+</body>
+</html>
+
+ 
+</body>

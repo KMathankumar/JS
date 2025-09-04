@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>Login Form</title>
+<script>
+function validateLogin() {
+var email=document.getElementById("loginEmail").value;
+var pass=document.getElementById("loginPassword").value;
+var pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!pattern.test(email)){
+alert("Enter a valid email");
+return false;
+}
+if(pass.length<8){
+alert("Password must be at least 8 characters");
+return false;
+}
+alert("Login successful!");
+return true;
+}
+</script>
+</head>
+<body><center>
+<h1>Login</h1>
+<form onsubmit="return validateLogin()">
+<b>Email:</b> <input type="text" id="loginEmail"><br><br>
+<b>Password:</b> <input type="password" id="loginPassword"><br><br>
+<input type="submit" value="Login">
+</form>
+<p>Don't have an account? <a href="signup.html">Signup here</a></p>
+</center>
+
+</body>
+</html>

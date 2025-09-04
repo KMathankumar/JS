@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>Signup Form</title>
+<script>
+function validateSignup() {
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var pass=document.getElementById("password").value;
+var pass1=document.getElementById("password1").value;
+var pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (name=="") {
+alert("Name field is empty");
+return false;
+}
+if (!pattern.test(email)) {alert("Invalid email, please check");
+return false;
+}
+if (pass.length<8) {
+alert("Password must be at least 8 characters");
+return false;
+}
+if (pass!=pass1) {
+alert("Passwords do not match");
+return false;
+}
+alert("Signup successful!");
+return true;
+}
+</script>
+</head>
+<body>
+    <center>
+<h1>Signup</h1>
+<form onsubmit="return validateSignup()">
+<b>Name:</b> <input type="text" id="name"><br><br>
+<b>Email:</b> <input type="text" id="email"><br><br>
+<b>Password:</b> <input type="password" id="password"><br><br>
+<b>Confirm Password:</b> <input type="password" id="password1"><br><br>
+<input type="submit" value="Signup">
+</form>
+<p>Already have an account? <a href="login.html">Login here</a></p>
+</center>
+</body>
+</html>
